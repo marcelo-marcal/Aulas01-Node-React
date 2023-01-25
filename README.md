@@ -22,3 +22,5 @@ link:
 ```
 https://regular-mink-7ec.notion.site/Aulas-Node-React-506c81e7473a498a9c890a97265860fe
 ```
+
+### No PostgreSQL

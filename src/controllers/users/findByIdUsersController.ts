@@ -1,13 +1,13 @@
 import { Request, Response } from "express";
 import { prismaClient } from "../../database/prismaClient";
-import { isNamber } from "../../utils/validations/isNamber";
+import { isNumber } from "../../utils/validations/isNumber";
 import { required } from "../../utils/validations/required";
 
 const findByIdUsersController = async (req: Request, res: Response) => {
   const params = req.params;
 
   required(params.id, "id");
-  isNamber(params.id, "id");
+  isNumber(params.id, "id");
 
   const user = await prismaClient.user.findUnique({
     where: {
