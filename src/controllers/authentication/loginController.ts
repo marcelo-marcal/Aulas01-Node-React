@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+
 import { prismaClient } from "../../database/prismaClient";
 import { required } from "../../utils/validations/required";
 
