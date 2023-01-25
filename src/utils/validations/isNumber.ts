@@ -1,4 +1,4 @@
-const isNamber = (value: any, name?: string) => {
+const isNumber = (value: any, name?: string) => {
   const valor = Number(value);
 
   if (isNaN(valor)) {
@@ -7,4 +7,4 @@ const isNamber = (value: any, name?: string) => {
   }
 };
 
-export { isNamber };
+export { isNumber };
