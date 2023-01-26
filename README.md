@@ -110,3 +110,21 @@ Após a etapa anterior, será perguntando a você se deseja instalar as dependê
 
 
 ### No PostgreSQL
+
+
+Rodar comando para gerar a migration
+
+`npx prisma migrate dev --name init`
+
+Atualizar tipagens do prisma
+
+`npx prisma generate dev`
+
+Converte os arquivo para Javascript: 
+`yarn build`.
+
+Instalar base do prisma para rodar.
+`npx prisma init --datasource-provider postgresql`.
+
+Interface tabular simples, você pode ver rapidamente os dados de seu banco de dados local e verificar se seu aplicativo está funcionando corretamente.
+`npx prisma studio`
